@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:background="@color/bgcolor"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:context=".SettingsProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:elevation="12dp"
+            android:id="@+id/view2"
+            app:cardCornerRadius="40dp"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:id="@+id/iv_user_photo"
+                android:layout_height="120dp"
+                android:layout_width="match_parent"
+                android:src="@drawable/img"
+                android:scaleType="centerCrop"/>
+        </android.support.v7.widget.CardView>
+
+
+<!--            <ImageView-->
+<!--                android:layout_marginTop="80dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:id="@+id/iv_user_photo"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:background="@drawable/button"-->
+<!--                android:contentDescription="Description"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/img" />-->
+
+
+
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Edit"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_name"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+
+            tools:text="Rahma Danu Sadewa" />
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_centerHorizontal="true"
+            tools:text="Male" />
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"
+
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_gender"
+            android:layout_centerHorizontal="true"
+            tools:text="rahmadanu@gmail.com" />
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_mobile_number"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_email"
+            android:layout_centerHorizontal="true"
+
+            tools:text="123456789" />
+
+        <Button
+
+            android:id="@+id/btn_logout"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            app:cornerRadius="15dp"
+            android:layout_below="@id/tv_mobile_number"
+            android:layout_gravity="center"
+            android:layout_marginTop="41dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="Logout"
+
+             />
+
+        <TextView
+            android:id="@+id/home_testing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your price is correct and valid! "
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:layout_below="@id/btn_logout"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context=".transport.AdminViewTransportDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivvehicleImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:contentDescription="image"
+            android:scaleType="centerCrop" />
+
+        <TextView
+
+            android:id="@+id/tvvehicleTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivvehicleImage"
+            android:paddingHorizontal="15dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:text="vehicle Title" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvvehicleTitle"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            tools:text="$25" />
+
+        <TextView
+            android:id="@+id/tvSuitedFor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvvehicleTitle"
+            android:layout_alignParentEnd="true"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            tools:text="Beginner" />
+
+        <TextView
+            android:id="@+id/tvvehicleDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPrice"
+            android:paddingHorizontal="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="Description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvvehicleDescription"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEditvehicle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_background"
+                android:text="Edit vehicle"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnDeletevehicle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_background"
+                android:text="Delete vehicle"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

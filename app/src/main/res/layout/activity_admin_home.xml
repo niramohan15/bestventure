@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/bgcolor"
+    tools:context=".UserHomeActivity">
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="35dp"
+            android:id="@+id/adminsightseeing"
+            android:elevation="15dp"
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="30dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_height="120dp">
+            <TextView
+                android:layout_marginTop="50dp"
+                android:text="Sight Seeing"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="35dp"
+            android:id="@+id/adminhotel"
+            android:elevation="15dp"
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="30dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_height="120dp">
+            <TextView
+                android:layout_marginTop="50dp"
+                android:text="Hotel"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="35dp"
+            android:id="@+id/admintransport"
+            android:elevation="15dp"
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="30dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_height="120dp">
+            <TextView
+                android:layout_marginTop="50dp"
+                android:text="Transport"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:id="@+id/quizimage"
+                android:layout_height="match_parent" />
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
